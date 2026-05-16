@@ -63,22 +63,6 @@ pip install "mcp[cli]" numpy pandas scipy requests pydantic
 python -m mcp_nifty.server
 ```
 
-## VS Code / Claude Desktop Integration
-
-Add to your MCP settings (`settings.json` or `claude_desktop_config.json`):
-
-```json
-{
-  "mcpServers": {
-    "nifty-index": {
-      "command": "python",
-      "args": ["-m", "mcp_nifty.server"],
-      "cwd": "/path/to/VOLUMES"
-    }
-  }
-}
-```
-
 ## Data Requirements
 
 The server reads from these JSON files in the parent directory:
